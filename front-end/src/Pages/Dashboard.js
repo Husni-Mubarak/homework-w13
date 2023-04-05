@@ -18,13 +18,16 @@ function Dashboard() {
         <Button onClick={(e) => navigate("/add")} colorScheme="teal" variant="link">
           Add
         </Button>
+        <Button onClick={(e) => navigate("/detail/:id")} colorScheme="teal" variant="link">
+          Detail
+        </Button>
         <Button onClick={(e) => navigate("/edit/:id")} colorScheme="teal" variant="link">
           Edit
         </Button>
       </ButtonGroup>
       <Spacer />
       <Box p="2">
-        <Button onClick={(e) => navigate("/")} colorScheme="teal" size='sm'>
+        <Button onClick={(e) => navigate("/")} colorScheme="teal" size="sm">
           Logout
         </Button>
       </Box>
